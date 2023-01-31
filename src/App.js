@@ -6,6 +6,7 @@ import Cocteles from './sections/Cocteles/Cocteles';
 import Pagina404 from './sections/Pagina404/Pagina404';
 import Series from './sections/Series/Series';
 import SobreMi from './sections/SobreMi/SobreMi';
+import RickAndMorty from './sections/RickAndMorty/RickAndMorty';
 
 import './styles.css';
 
@@ -30,6 +31,7 @@ function App() {
                     <Route path="series" element={<Series />} />
                     <Route path="cocteles" element={<Cocteles />} />
                     <Route path="sobremi" element={<SobreMi />} />
+                    <Route path="rickandmorty" element={<RickAndMorty />} />
                     <Route path="*" element={<Pagina404 />} />
                 </Routes>
             </BrowserRouter>
