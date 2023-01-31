@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Box from '../../components/Box/Box';
+import { Box } from '@enviopack/enviopack-ui';
 import Title from '../../components/Title/Title';
 import Image from '../../components/Image/Image';
 import Card from '../../components/Card/Card';
