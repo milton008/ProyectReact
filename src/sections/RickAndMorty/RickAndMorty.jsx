@@ -5,7 +5,6 @@ import Image from '../../components/Image/Image';
 //import Card from '../../components/Card/Card';
 import useFetch from '../../hooks/useFetch';
 import * as S from './styled.js';
-import { Shower } from '@mui/icons-material';
 
 function RickAndMorty() {
     const [characters, setCharacters] = useState([]);
@@ -34,23 +33,23 @@ function RickAndMorty() {
                 {
                     characters.map((item) => (
                         <S.ItemCard>
-                        <Card marginBottom="16px" backgroundColor='white-alpha-600' borderRadius="10px" padding="16px" marginTop="8px">
-                            <Title isSmall>{item.name}</Title>
-                            <Image width="200px" isBordered url={item.image} />
-                            <Stack>
-                                <Text fontWeight="bold" color="red-600" fontSize="md">Estado: {<Badge size="md" color={item.status === 'Alive' ? 'green' : 'red'}>{item.status}</Badge>}</Text>
-                                <Text fontWeight="bold" color="black-600" fontSize="md">Especie: {item.species}</Text>
-                            </Stack>
-                        </Card>
+                            <Card marginBottom="16px" backgroundColor='white-alpha-600' borderRadius="10px" padding="16px" marginTop="8px">
+                              <Title isSmall>{item.name}</Title>
+                              <Image width="200px" isBordered url={item.image} />
+                                <Stack>
+                                    <Text fontWeight="bold" color="red-600" fontSize="md">Estado: {<Badge size="md" color={item.status === 'Alive' ? 'green' : 'red'}>{item.status}</Badge>}</Text>
+                                    <Text fontWeight="bold" color="black-600" fontSize="md">Especie: {item.species}</Text>
+                                </Stack>
+                            </Card>
                         </S.ItemCard>        
                     ))
                 }
             </S.ContainerCards>
             ) : (    
-                <Stack gap="0.5rem">
-                <Skeleton />
-                <Skeleton height="10rem" />
-                </Stack>
+            <Stack gap="0.5rem">
+               <Skeleton />
+               <Skeleton height="10rem" />
+            </Stack>
             )}
         </Box>
 
