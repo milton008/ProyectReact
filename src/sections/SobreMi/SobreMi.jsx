@@ -56,7 +56,7 @@ function SobreMi() {
 
     return (
         <Box padding="16px">
-            <Title>Que hago cuando no rompo el React</Title>
+            <Title>Que hago cuando no rompo React</Title>
 
             <Box backgroundColor="LightBlue" borderRadius="10px" padding="16px" marginTop="8px">
                 <Title isSmall>Listado</Title>
