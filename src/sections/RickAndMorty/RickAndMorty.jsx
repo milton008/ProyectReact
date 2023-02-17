@@ -28,7 +28,6 @@ function RickAndMorty() {
             <Box>
                 <Switch justifyContent="left" position="fixed" margin="-10px 0px 0px 10px" onClick={() => setShowAllEpisodes(!showAllEpisodes)}></Switch>
                 <Text fontWeight="bold" color="blue-600" fontSize="xl" margin="0px 0px 0px 60px">Mostrar Episodios</Text>
-                       
             </Box>
             {characters.length > 0 ? (
             <Box display="flex" flexDirection="row" style={{flexWrap: "wrap"}}>
@@ -41,7 +40,7 @@ function RickAndMorty() {
                                     <Text fontWeight="bold" color="black-600" fontSize="md">Estado: {<Badge size="md" color={item.status === 'Alive' ? 'green' : 'red'}>{item.status}</Badge>}</Text>
                                     <Text fontWeight="bold" color="black-600" fontSize="md">Especie: {item.species}</Text>
                                     {showAllEpisodes === true && (
-                                    <Text fontWeight="bold" color="black-600" fontSize="md">Cantidad de episodios: {item.episode.length}</Text>
+                                        <Text fontWeight="bold" color="black-600" fontSize="md">Cantidad de episodios: {item.episode.length}</Text>
                                     )}                                
                                 </Stack>   
                         </Card>       
